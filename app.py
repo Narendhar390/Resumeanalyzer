@@ -1,5 +1,6 @@
 import streamlit as st
 import fitz
+from resumeanalyzer import generate_feedback
 from extracter import extract_skills 
 from matcher import match_skills
 st.title("AI Resume Analyzer")
