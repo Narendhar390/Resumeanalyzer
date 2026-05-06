@@ -1,7 +1,8 @@
 from groq import Groq
+import streamlit as st
 
 client = Groq(
-    api_key="YOUR_GROQ_API_KEY"
+    api_key = st.secrets["groq_key"]
 )
 def generate_feedback(
     resume_text,
